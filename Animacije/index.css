@@ -1,0 +1,120 @@
+body {
+    background-color: #050210;
+    
+    
+}
+
+.circle1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+    margin: auto;
+    position: relative;
+    top: 25%;
+    animation: changeColor1 0.7s infinite ;
+    
+    
+    
+
+    
+    
+    
+
+}
+
+@keyframes changeColor1 {
+    0%{
+        background: linear-gradient(90deg, #fb5dad, #55fb9f, #b97aff);
+        
+
+    }
+    33%{
+        background: linear-gradient(180deg, #fb5dad, #55fb9f, #b97aff);
+        
+
+    }
+    66%{
+        background: linear-gradient(270deg, #fb5dad, #55fb9f, #b97aff);
+        
+
+    }
+    100%{
+        background: linear-gradient(360deg, #fb5dad, #55fb9f, #b97aff);
+        
+
+    }
+}
+
+.circle1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #fb5dad, #55fb9f, #b97aff);
+    filter: blur(75px); 
+    z-index: -1;
+    animation: rotateShadow 0.7s infinite linear;
+}
+
+@keyframes rotateShadow {
+    0% {
+        transform: rotate(0deg);
+        background: linear-gradient(45deg, #fb5dad, #55fb9f, #b97aff);
+    }
+    33% {
+        transform: rotate(120deg);
+        background: linear-gradient(45deg,  #fb5dad, #55fb9f, #b97aff);
+    }
+    66% {
+        transform: rotate(240deg);
+        background: linear-gradient(45deg, #fb5dad, #55fb9f, #b97aff);
+    }
+    100% {
+        transform: rotate(360deg);
+        background: linear-gradient(45deg, #fb5dad, #55fb9f, #b97aff);
+    }
+}
+
+.circle2 {
+
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #050213;
+    transform: translate(-50%, -50%);
+    animation: changeColor2 1s infinite; 
+        }
+
+    @keyframes changeColor2 {
+        0% {
+            background-image: radial-gradient(circle, #110d37 0%, #090623 5%,  #08031c 100%);
+            
+        }
+        20% {
+            background-image: radial-gradient(circle, #110d37 0%, #090623  20%,  #08031c 100%);
+            
+        }    
+        40% {
+            background-image: radial-gradient(circle, #110d37 0%, #090623  40%,  #08031c 100%);
+            
+        }   
+        60% {
+            background-image: radial-gradient(circle, #110d37 0%, #090623 60% ,  #08031c 100%);
+            
+        }
+        80% {
+            background-image: radial-gradient(circle, #110d37 0%, #090623 80%,  #08031c 100%);
+            
+            
+        }
+}
+
+
+
